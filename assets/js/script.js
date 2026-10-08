@@ -1,4 +1,4 @@
-const socket = new WebSocket('ws://localhost:9999');
+const socket = new WebSocket('ws://172.24.18.89:9999');
 
 socket.onopen = function() {
     console.log('Connecté au serveur WebSocket');
