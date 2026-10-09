@@ -1,7 +1,58 @@
+*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    margin: 0;
+    height: 100dvh;
+}
+main
+{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    grid-template-rows: 50px 1fr;
+}
+.header_reglage
+{
+    height: 50px;
+    background-color: rgba(00, 00, 00, 0.85);
+    color: white;
+    grid-column: 2/3;
+}
+.header_reglage h1
+{
+    margin: 0;
+    text-align: center;
+}
+.conv
+{
+    height: 100%;
+    box-sizing: border-box;
+    border-right: 2px solid green;
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+.conv_header
+{
+    background-color:rgba(00, 00, 00, 0.85);
+    color: white;
+    height: 50px;
+}
+.conv section
+{
+    height: ;
+    background-color:rgba(00 ,00, 00, 0.8);
+    color: white;
+}
+
+
 .message
 {
-    width: 80%;
-    height: 500px;
+    width: 100%;
+    height: 100%;
     background-color: rgba(00 ,00, 00, 0.8);
     color: white;
     display: flex;
@@ -10,9 +61,17 @@
     scroll-snap-type: y mandatory;
     position: relative;
 }
+form
+{
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+}
 #message
 {
-    margin-top: 20px;
-    width: 75%;
+    height: 30px;
+}
+#send
+{
     height: 30px;
 }
