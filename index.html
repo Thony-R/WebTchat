@@ -13,18 +13,33 @@
             <h1>DevChat</h1>
             <!-- <button class="header_reglage_bouton" id="header_bouton">⚙️</button> -->
         </header>
-        <section class="message">
-            <form action="">
-                <input type="text" placeholder="Mets ton message ici" id="message">
+        <article class="message">
+            <section class="message__affichage">
+
+            </section>
+            <form action="" class="message__form">
+                <textarea spellcheck="true" id="message" required placeholder="Mets ton message ici"></textarea>
                 <button type="button" id="send">Send</button>
             </form>
-        </section>
+        </article>
         <aside class="conv">
             <header class="conv_header">
-                conv
+                Conv
             </header>
-            <section>d</section>
+            <section>
+                <ul>
+                    <li>ajout pseudo</li>
+                    <li>gestion des message</li>
+                </ul>
+            </section>
         </aside>
     </main>
+    <dialog id="boxForm">
+        <form action="">
+            <label for="pseudoBox">Pseudo : </label>
+            <input type="text"  id="pseudoBox" placeholder="Votre pseudo">
+            <button type="button" id="btnBox">Valider</button>
+        </form>
+    </dialog>
 </body>
 </html>
