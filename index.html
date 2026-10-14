@@ -11,7 +11,14 @@
     <main>
         <header class="header_reglage">
             <h1>DevChat</h1>
-            <!-- <button class="header_reglage_bouton" id="header_bouton">⚙️</button> -->
+            <a id="menuBurger" href="#">⚙️</a>
+            <form class="header_reglage_pseudoModif" action="">
+                <label for="pseudoModif">Pseudo</label>
+                <div class="header_reglage_pseudoModif_input">
+                    <input type="text" id="pseudoModif">
+                    <button type="button" id="valideModif">✅</button>
+                </div>
+            </form>
         </header>
         <article class="message">
             <section class="message__affichage">
@@ -36,7 +43,7 @@
     </main>
     <dialog id="boxForm">
         <form action="">
-            <label for="pseudoBox">Pseudo : </label>
+            <label for="pseudoBox">Pseudo</label>
             <input type="text"  id="pseudoBox" placeholder="Votre pseudo">
             <button type="button" id="btnBox">Valider</button>
         </form>

@@ -7,6 +7,7 @@ body
 {
     margin: 0;
     height: 100dvh;
+    overflow:hidden ;
 }
 main
 {
@@ -20,14 +21,53 @@ main
     height: 50px;
     background-color: rgba(00, 00, 00, 0.85);
     color: white;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 10%;
     align-items: center;
-    justify-content: center;
     grid-column: 2/3;
+}
+#menuBurger
+{
+    text-decoration: none;
+    justify-self: center;
+    color: white;
+}
+.header_reglage_pseudoModif
+{
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    position: absolute;
+    right: -20%;
+    width: 20%;
+    bottom: 0;
+    height: calc(100% - 50px);
+    background-color: rgba(00 ,00, 00, 0.1);
+    transition: 1s;
+
+    
+}
+.header_reglage_pseudoModif.active
+{
+    
+    right: 0;
+}
+.header_reglage_pseudoModif label{
+    align-self: center;
+    margin-top: 0.75rem;
+}
+.header_reglage_pseudoModif_input
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:0.5rem;
+    margin-top:0.75rem;
 }
 .header_reglage h1
 {
     margin: 0;
+    justify-self: center ;
 }
 .conv
 {
@@ -63,7 +103,6 @@ main
 {
     background-color: rgba(00 ,00, 00, 0.8);
     overflow: hidden;
-
 }
 .message__affichage
 {
@@ -89,7 +128,8 @@ main
 }
 
 #message {
-    width: calc(100% - 300px);
+    width: 100%;
+    margin-left: 1rem;
     field-sizing: content;
     min-height: 50px;
     max-height: 200px;
@@ -99,9 +139,11 @@ main
 #send
 {
     height: 50px;
-    width: 100px;
+    width: 50px;
+    margin-right:1rem ;
 }
-div
+p
 {
+    text-wrap: wrap;
     white-space: pre-wrap;
 }
